@@ -1,0 +1,4 @@
+<ng-container *ngFor="let user of users$ | async">
+  <app-user-card (deleteUserEvent)="deleteUser($event)" [user]="user"></app-user-card>
+</ng-container>
+
